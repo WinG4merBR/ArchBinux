@@ -108,5 +108,10 @@ sudo -u wing4merbr kwriteconfig6 --file kdeglobals --group WM --key activeFont "
 echo "Instalando tema do catppuccin para o Konsole..."
 sudo -u wing4merbr mkdir -p /home/wing4merbr/.local/share/konsole/
 sudo -u wing4merbr curl -L -o /home/wing4merbr/.local/share/konsole/catppuccin-mocha.colorscheme https://raw.githubusercontent.com/catppuccin/konsole/refs/heads/main/themes/catppuccin-mocha.colorscheme
+echo "Configurando montagem automática dos discos..."
 
-echo "Done!"
+curl -L https://raw.githubusercontent.com/WinG4merBR/ArchBinux/refs/heads/main/scripts/setup_drives.sh \
+  -o /root/setup_drives.sh
+
+chmod +x /root/setup_drives.sh
+bash /root/setup_drives.sh
