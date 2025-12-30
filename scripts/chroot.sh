@@ -113,5 +113,5 @@ echo "Configurando montagem automática dos discos..."
 curl -L https://raw.githubusercontent.com/WinG4merBR/ArchBinux/refs/heads/main/scripts/setup_drives.sh \
   -o /root/setup_drives.sh
 
-chmod +x /root/setup_drives.sh
-bash /root/setup_drives.sh
+# chmod +x /root/setup_drives.sh
+echo "Done"
